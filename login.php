@@ -8,25 +8,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
 </head>
 <body>
-    <form action="#" method="POST">
-        <h1>Login</h1>
-        <input type="text" name="username" placeholder="Username"><br>
-        <input type="password" name="password" placeholder="Password"><br>
-        <input type="submit" name="login" value="Login">
-
-        <div class="forget"><a href="#" onclick="message()">Forget password?</a></div>
-
-        <div class="sign">New Member?<a href="form.php">SignIn</a> here</div>
-    </form>
+    <main class="login">
+        <form action="#" method="POST">
+            <h1>Login</h1>
+            <input class="input" type="text" name="username" placeholder="Username"><br>
+            <input class="input" type="password" name="password" placeholder="Password"><br>
+            <input id="login-btn" type="submit" name="login" value="Log in">
+            <button class="signup-btn"><a href="signup.php">Sign up</a></button>
+        </form>
+    </main>
 </body>
-<script>
-    function message(){
-        alert("Try to remember your password!");
-    }
-</script>
 </html>
 
 <?php
@@ -48,6 +46,6 @@
         header('location: display.php');
         
     }else{
-        echo "Login Failed";
+        // echo "Login Failed";
     }
 ?>

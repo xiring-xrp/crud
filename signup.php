@@ -1,4 +1,7 @@
-<?php include "connection.php"?>
+<?php
+    error_reporting(0);
+    include "connection.php"
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +57,7 @@
 
         <label for="address">Address:</label>
         <input type="text" name="address" id="address" required><br>
-        <input type="submit" value="Register" name="register" >
+        <input type="submit" value="Sign up" name="register" >
     </form>
 </body>
 </html>

@@ -52,14 +52,14 @@
             }
             .link{
                 padding: 10px 16px;
-                border:1px solid black;
-                border-radius: 5px;
+                border:1px solid green;
+                border-radius: 10px;
                 cursor: pointer;
                 float: right;
                 position: relative;
                 top: 25px;
                 right: 35px;
-                background-color: #271b6c;
+                background-color: green;
                 color:white;
                 font-weight: bold;
                 font-size: 16px;
