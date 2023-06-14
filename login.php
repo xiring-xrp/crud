@@ -17,7 +17,7 @@
 <body>
     <main class="login">
         <form action="#" method="POST">
-            <h1>Login</h1>
+            <h1 class="h1">Login</h1>
             <input class="input" type="text" name="username" placeholder="Username"><br>
             <input class="input" type="password" name="password" placeholder="Password"><br>
             <input id="login-btn" type="submit" name="login" value="Log in">
