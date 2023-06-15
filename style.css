@@ -63,14 +63,14 @@
 }
 
 
-/* signup.php */
+/* SignUp.php AND Update-design.php*/
 
-#signup{
+#signup, #update-design{
     display: flex;
     justify-content: center;
 }
 
-#signup form{
+#signup form, #update-design form{
     margin: 75px;
     border: 1px solid #150556;
     border-radius: 20px;
@@ -78,7 +78,7 @@
     background-color: #150556;
 }
 
-#signup form label{
+#signup form label, #update-design form label{
     /* border: 1px solid red; */
     display: inline-block;
     width: 11vw;  
@@ -89,12 +89,12 @@
     cursor: pointer;
 }
 
-#signup form .input-caste{
+#signup form .input-caste, #update-design form .input-caste{
     width: 1vw;
     margin: 5px;
 }
 
-#signup form .caste{
+#signup form .caste, #update-design form .caste{
     display: inline-block;
     width: 2vw;
     padding: 0 12px 0 0;
@@ -103,18 +103,23 @@
     margin-right: 10px;
 }
 
-#signup form .input-language{
+#signup form .input-language, #update-design form .input-language{
     width: 2vw;
 }
 
-#signup form .language{
+#signup form .language, #update-design form .language{
     display: inline-block;
     width: 2vw;
     padding: 0px;
     margin-right: 15px;
 }
 
-#signup form input{
+#update-design form .address{
+    position: relative;
+    bottom: 25px;
+}
+
+#signup form input, #update-design form input, .text-area{
     border: 1px solid #150556;
     border-radius: 8px;
     /* outline: none; */
@@ -123,26 +128,37 @@
     margin: 5px;
 }
 
-#signup form .upload-file{
+#signup form .upload-file, #update-design form .upload-file{
     color: #ffffff;
 }
 
-#signup form .select-gender{
+#signup form .select-gender, #update-design form .select-gender{
     border: 1px solid #150556;
     border-radius: 8px;
     /* outline: none; */
-    padding: 5px;
+    padding: 5px 10px;
     margin-left: 5px;
     color: #150556;
     font-weight: bold;
     cursor: pointer;
 }
 
-#signup form .signup-btn{
+#signup form .signup-btn, #update-design form .update-btn{
     width: 9vw;
     padding: 10px 20px;
     color: #ffffff;
     position: relative;
     left: 0;
     margin-top: 50px;
+    font-weight: bold;
+    background-color: green;
+    cursor: pointer;
+}
+
+#update-design form .update-btn{
+    width: 10vw;
+    padding: 12px 24px 12px 12px;
+    font-size: 16px;
+    position: relative;
+    bottom: 15px;
 }

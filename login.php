@@ -46,6 +46,7 @@
         header('location: display.php');
         
     }else{
-        // echo "Login Failed";
+        // echo "<script>alert('Login Failed');</script>";
+        echo "Login Failed";
     }
 ?>

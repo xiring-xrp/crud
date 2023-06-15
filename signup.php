@@ -29,6 +29,9 @@
             <label for="lname">Last Name:</label>
             <input type="text" name="lname" id="lname" required><br>
 
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" required><br>
+
             <label for="pwd">Password:</label>
             <input type="password" name="pwd" id="pwd" required><br>
 
@@ -42,8 +45,6 @@
                 <option value="female" >Female</option>
                 <option value="others" >Others</option>
             </select><br>
-            <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email" required><br>
 
             <label for="phno">Phone Number:</label>
             <input type="text" name="phno" id="phno" required><br>
@@ -95,6 +96,11 @@
 
         if($data){
             echo "<script>alert('Data Inserted Into Database')</script>";
+            ?>
+
+            <meta http-equiv="Refresh" content="0; url='http://localhost/crud/login.php'" />
+            
+            <?php
         }else{
             echo "<script>alert('Failed to insert Data into Database')</script>";
         }

@@ -4,11 +4,15 @@
 
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <title>Display</title>
         <style>
-            /* body{
-                background-color: #34495E;
-            } */
+            .display{
+                padding: 0 10px 0 10px;
+            }
             table{
                 background-color: white;
                 padding: 20px;
@@ -16,10 +20,10 @@
                 border-radius: 7px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
                 position: relative;
-                top:25px;
+                top:50px;
             }
             .heading{
-                color: white;
+                color: #150556;
                 font-size:25px;
                 padding:10px;
                 position: relative;
@@ -90,21 +94,22 @@
     if($total != 0){
 
         ?>
-            <h2 align="center" class="heading">User Records</h2>
-            <table border="1px" cellspacing="7" align="center" width="100%">
-                <tr>
-                    <th width="3%">ID</th>
-                    <th width="3%">Image</th>
-                    <th width="7%">First Name</th>
-                    <th width="7%">Last Name</th>
-                    <th width="6%">Gender</th>
-                    <th width="20%">Email</th>
-                    <th width="8%">Phone</th>
-                    <th width="7%">Caste</th>
-                    <th width="15%">Language</th>
-                    <th width="7%">Address</th>
-                    <th width="14%">Opertaions</th>
-                </tr>
+            <div class="display">
+                <h2 align="center" class="heading">User Records</h2>
+                <table border="1px" cellspacing="7" align="center" width="100%">
+                    <tr>
+                        <th width="3%">ID</th>
+                        <th width="3%">Image</th>
+                        <th width="7%">First Name</th>
+                        <th width="7%">Last Name</th>
+                        <th width="6%">Gender</th>
+                        <th width="20%">Email</th>
+                        <th width="8%">Phone</th>
+                        <th width="7%">Caste</th>
+                        <th width="15%">Language</th>
+                        <th width="7%">Address</th>
+                        <th width="14%">Opertaions</th>
+                    </tr>
         <?php
         while($result = mysqli_fetch_assoc($data)){
             echo "<tr class='table'>
@@ -129,6 +134,7 @@
     }
 ?>
 </table>
+</div>
 
 <script>
     function checkDelete(){
